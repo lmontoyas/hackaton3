@@ -17,11 +17,11 @@ public class Course {
 
     private String code;
 
-    private String HRGroup;
+    private String hrgroup;
 
     private Integer cycle;
 
-    private String VRGroup;
+    private String vrgroup;
 
     @ManyToOne
     @JoinColumn(name = "course_type_id")
@@ -34,9 +34,9 @@ public class Course {
         this.name = name;
         this.credits = credits;
         this.code = code;
-        this.HRGroup = HRGroup;
+        this.hrgroup = HRGroup;
         this.cycle = cycle;
-        this.VRGroup = VRGroup;
+        this.vrgroup = VRGroup;
         this.courseType = courseType;
     }
 
@@ -73,11 +73,11 @@ public class Course {
     }
 
     public String getHRGroup() {
-        return HRGroup;
+        return hrgroup;
     }
 
     public void setHRGroup(String HRGroup) {
-        this.HRGroup = HRGroup;
+        this.hrgroup = HRGroup;
     }
 
     public Integer getCycle() {
@@ -89,11 +89,11 @@ public class Course {
     }
 
     public String getVRGroup() {
-        return VRGroup;
+        return vrgroup;
     }
 
     public void setVRGroup(String VRGroup) {
-        this.VRGroup = VRGroup;
+        this.vrgroup = VRGroup;
     }
 
     public CourseType getCourseType() {
